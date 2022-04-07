@@ -1,5 +1,6 @@
 import enData from "../../resume/en-data.yaml";
 import ruData from "../../resume/ru-data.yaml";
+import hyData from "../../resume/hy-data.yaml";
 
 export const languages = [
   {
@@ -28,10 +29,23 @@ export const languages = [
       education: "Образование",
     },
   },
+  {
+    name: "Հայերեն",
+    code: "hy",
+    data: hyData,
+    resumeLabels: {
+      contacts: "Կոնտակտներ",
+      profile: "Պրոֆիլ",
+      skills: "Հմտություններ",
+      experience: "Փորձ",
+      professional: "Պրոֆեսիոնալ",
+      education: "Կրթությունը",
+    },
+  },
 ];
 
 export function getCurrentLanguage() {
-  return languages[0];
+  return languages[2];
 }
 
 export function getLanguages() {

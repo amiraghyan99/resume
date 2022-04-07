@@ -1,9 +1,9 @@
 <template>
-  <Title :text="educationLabel" />
+  <Title :text="educationLabel"/>
   <section class="education-section" v-for="(education, index) in educations" :key="index">
-    <Headline :text="education.degreeTitle" />
-    <Paragraph :text="education.institutionName" />
-    <Paragraph :text="education.studyDirection" />
+    <Headline :text="education.degreeTitle"/>
+    <Paragraph :text="education.institutionName"/>
+      <Paragraph :text="education.studyDirection"/>
   </section>
 </template>
 
@@ -15,7 +15,7 @@ import Paragraph from "@/components/Paragraph.vue";
 export default {
   Name: "Education",
 
-  components: { Title, Headline, Paragraph },
+  components: {Title, Headline, Paragraph},
 
   computed: {
     currentLanguage() {

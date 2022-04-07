@@ -1,16 +1,22 @@
 <template>
-  <Title :text="contactsLabel" />
+  <Title :text="contactsLabel"/>
   <div v-if="phoneNumber" class="contact-line">
-    <img src="@/assets/phone.svg" />
-    <Paragraph class="contact" :text="phoneNumber" />
+    <img src="@/assets/phone.svg"/>
+    <a :href="`tel:${phoneNumber}`" target="_blank">
+      <Paragraph class="contact" :text="phoneNumber"/>
+    </a>
   </div>
   <div v-if="email" class="contact-line">
-    <img src="@/assets/email.svg" />
-    <Paragraph class="contact" :text="email" />
+    <img src="@/assets/email.svg"/>
+    <a :href="`mailto:${email}`" target="_blank">
+      <Paragraph class="contact" :text="email"/>
+    </a>
   </div>
-  <div v-if="email" class="contact-line">
-    <img src="@/assets/linkedin.svg" />
-    <Paragraph class="contact" :text="linkedIn" />
+  <div v-if="linkedIn" class="contact-line">
+    <img src="@/assets/linkedin.svg"/>
+    <a :href="`https://www.linkedin.com/in/${linkedIn}`" target="_blank">
+      <Paragraph class="contact" :text="linkedIn"/>
+    </a>
   </div>
 </template>
 
@@ -21,7 +27,7 @@ import Paragraph from "@/components/Paragraph.vue";
 export default {
   name: "Contacts",
 
-  components: { Title, Paragraph },
+  components: {Title, Paragraph},
 
   computed: {
     currentLanguage() {

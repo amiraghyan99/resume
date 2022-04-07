@@ -1,8 +1,8 @@
-lang: en
+lang: hy
 
 name:
-  first: Gevorg
-  last: Amiraghyan
+  first: Գեվորգ
+  last: Ամիրաղյան
 
 position: Full Stack Developer
 
@@ -23,11 +23,11 @@ skills:
 
 experience:
   - workPosition: BackEnd Developer
-    workPeriod: 2021-2022
+    workPeriod: 2021 - 2022
     companyName: M&D Systems
     description: "..."
 
 education:
-  - degreeTitle: NPUA
-    institutionName:  National Polytechnic University of Armenia
-    studyDirection: System Administrator
+  - degreeTitle: ՀԱՊՀ
+    institutionName: Հայաստանի Ազգային Պոլիտեխնիկական Համալսարան
+    studyDirection: Համակարգչային Ադմինիստրատոր

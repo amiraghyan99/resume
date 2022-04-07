@@ -55,7 +55,10 @@ export default {
 .contacts,
 .skills,
 .education,
-.expertise {
+.expertise,
+.profile,
+.experience{
+  text-align: center;
   padding: 0px 45px 0 45px;
   margin: 0px 0px 45px 0px;
 }

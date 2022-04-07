@@ -1,11 +1,13 @@
 <template>
-  <Title :text="skillsLabel" />
-  <SubTitle :text="professionalLabel" />
+  <Title :text="skillsLabel"/>
+  <SubTitle :text="professionalLabel"/>
 
-  <div class="skill-line" v-for="(skill, index) in skills" :key="index">
-    <img class="circle" src="@/assets/circle.svg" />
-    <Paragraph class="contact" :text="skill" />
-  </div>
+  <ul class="skill-line" v-for="(skill, index) in skills" :key="index">
+    <li>
+      <Paragraph class="contact" :text="skill"/>
+    </li>
+
+  </ul>
 </template>
 
 <script>
@@ -16,7 +18,7 @@ import Paragraph from "@/components/Paragraph.vue";
 export default {
   Name: "Skills",
 
-  components: { Title, SubTitle, Paragraph },
+  components: {Title, SubTitle, Paragraph},
 
   computed: {
     currentLanguage() {
@@ -43,15 +45,6 @@ export default {
 </script>
 
 <style scoped>
-.circle {
-  width: 8px;
-  margin-left: 8px;
-}
-
-.material-icons {
-  display: inline-flex;
-  align-items: center;
-}
 
 .skill-line {
   display: flex;

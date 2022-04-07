@@ -1,10 +1,10 @@
 <template>
   <Title :text="experienceLabel" />
-  <section class="experience-section" v-for="(experience, index) in experiences" :key="index">
-    <section class="work-position-section">
+  <section v-for="(experience, index) in experiences" :key="index">
+    <section>
       <SubTitle :text="experience.workPosition" />
-      <SubTitle :text="experience.workPeriod" />
     </section>
+    <SubTitle :text="experience.workPeriod" />
 
     <Headline :text="experience.companyName" />
     <Paragraph :text="experience.description" />
@@ -37,19 +37,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.experience-section {
-  margin-bottom: 2em;
-}
-
-/* .experience-section:last-child {
-  margin-bottom: 0;
-} */
-
-.work-position-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-</style>

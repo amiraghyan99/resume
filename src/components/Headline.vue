@@ -20,7 +20,7 @@ h3 {
   margin: 0;
   letter-spacing: 2px;
   line-height: 22px;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
 }
